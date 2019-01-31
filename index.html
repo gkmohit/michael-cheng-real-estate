@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Michael Cheng</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+	<body class="smoothscroll enable-animation">
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+			<div id="header" class="navbar-toggleable-md sticky clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left" href="index.html">
+							<img src="assets/images/logo.png" alt="" />
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse">
+							<nav class="nav-main">
+
+								<!--
+									NOTE
+									
+									For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+									Direct Link Example: 
+
+									<li>
+										<a href="#">HOME</a>
+									</li>
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active"><!-- HOME -->
+										<a href="#">
+											HOME
+										</a>
+									</li>
+									<li><!-- FEATURES -->
+										<a href="#">
+											ABOUT
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											SELL
+										</a>
+										</li>
+									<!-- <li>
+										<a href="./team.html">
+											OUR TEAM
+										</a>
+									</li> -->
+									<li><!-- ABOUT -->
+										<a href="#">
+											SELL HOME
+										</a>
+									</li>
+									<li><!-- CONTACT US -->
+										<a href="#">
+											CONTACT US
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+
+
+			<!-- 
+				PAGE HEADER 
+				
+				CLASSES:
+					.page-header-xs	= 20px margins
+					.page-header-md	= 50px margins
+					.page-header-lg	= 80px margins
+					.page-header-xlg= 130px margins
+					.dark			= dark page header
+
+					.shadow-before-1 	= shadow 1 header top
+					.shadow-after-1 	= shadow 1 header bottom
+					.shadow-before-2 	= shadow 2 header top
+					.shadow-after-2 	= shadow 2 header bottom
+					.shadow-before-3 	= shadow 3 header top
+					.shadow-after-3 	= shadow 3 header bottom
+			-->
+			<!-- HOME -->
+			<section id="slider" class="fullheight" style="background:url('./assets/images/bg-home-page-1.jpg')">
+				<div class="overlay dark-7"><!-- dark overlay [1 to 9 opacity] --></div>
+
+				<div class="display-table">
+					<div class="display-table-cell vertical-align-middle">
+						
+						<div class="container text-center">
+							
+							<h1 class="m-0 fs-90 fw-800 wow fadeInUp" data-wow-delay="0.4s">Michael Cheng</h1>
+							<div class="divider divider-color divider-center divider-short"><!-- divider -->
+								<i class="fa fa-home"></i>
+							</div>
+							<!-- <img class="img-fluid h-800 h-800" src="assets/images/knotify_full_logo.png" alt="knotify logo" /> -->
+							<p class="lead font-lato fs-40 wow fadeInUp" data-wow-delay="0.7s">We help you get your dream house.</p>
+							<div class="mt-30">
+								<a href="#" class="btn btn-lg btn-outline-info btn-round">BUY HOME</a>
+								<span class="fs-17 hidden-xs-down btn btn-lg">&nbsp; OR &nbsp;</span>
+								<a href="#" class="btn btn-lg btn-outline-success btn-round">SELL HOME</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<!-- /HOME -->
+
+
+
+
+			<!-- -->
+			<section>
+				<div class="container">
+					
+					Content Here...
+					
+				</div>
+			</section>
+			<!-- / -->
+
+
+
+
+			<!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+
+					<div class="row">
+						
+						<div class="col-md-5">
+							
+							<h4 class="letter-spacing-1">CONTACT</h4>
+							<!-- Small Description -->
+							<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+
+							<!-- Contact Address -->
+							<address>
+								<ul class="list-unstyled">
+									<li class="footer-sprite address">
+										PO Box 21132<br>
+										Here Weare St, Melbourne<br>
+										Vivas 2355 Australia<br>
+									</li>
+									<li class="footer-sprite phone">
+										Phone: 1-800-565-2390
+									</li>
+									<li class="footer-sprite email">
+										<a href="mailto:support@yourname.com">support@yourname.com</a>
+									</li>
+								</ul>
+							</address>
+							<!-- /Contact Address -->
+
+						</div>
+
+
+						<div class="col-md-3">
+
+							<!-- Links -->
+							<h4 class="letter-spacing-1">SITEMAP</h4>
+							<ul class="footer-links list-unstyled">
+								<li>
+									<a href="#">
+										HOME
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										ABOUT
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										SELL
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										SELL HOME
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										CONTACT US
+									</a>
+								</li>
+							</ul>
+							<!-- /Links -->
+
+						</div>
+
+						<div class="col-md-4">
+
+							<!-- Newsletter Form -->
+							<h4 class="letter-spacing-1">KEEP IN TOUCH</h4>
+							
+
+							
+
+							<!-- Social Icons -->
+							<div class="mt-20">
+								<a href="#" class="social-icon social-icon-border social-facebook float-left" data-toggle="tooltip" data-placement="top" title="Facebook">
+
+									<i class="icon-facebook"></i>
+									<i class="icon-facebook"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-twitter float-left" data-toggle="tooltip" data-placement="top" title="Twitter">
+									<i class="icon-twitter"></i>
+									<i class="icon-twitter"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-gplus float-left" data-toggle="tooltip" data-placement="top" title="Google plus">
+									<i class="icon-gplus"></i>
+									<i class="icon-gplus"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-linkedin float-left" data-toggle="tooltip" data-placement="top" title="Linkedin">
+									<i class="icon-linkedin"></i>
+									<i class="icon-linkedin"></i>
+								</a>
+
+								<a href="#" class="social-icon social-icon-border social-rss float-left" data-toggle="tooltip" data-placement="top" title="Rss">
+									<i class="icon-rss"></i>
+									<i class="icon-rss"></i>
+								</a>
+					
+							</div>
+							<!-- /Social Icons -->
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+						<ul class="float-right m-0 list-inline mobile-block">
+							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li>&bull;</li>
+							<li><a href="#">Privacy</a></li>
+						</ul>
+						&copy; All Rights Reserved, Company LTD
+					</div>
+				</div>
+			</footer>
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="assets/js/scripts.js"></script>
+		
+		<!-- STYLESWITCHER - REMOVE -->
+		<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
+	</body>
+</html>
